@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+.app{
+    max-height: 100vh;
+    background: url(./img/spirits_roads_by_ethemos_df7r3lm.jpg) left 80%/cover;
+}
+.first{
+    width: 100vw;
+    height: 48vh;
+    text-align: center;
+    /* background: #ccc; */
+    /* position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom:0; */
+}
+.header{
+    height: 7vh;
+    
+}
+.title{
+    font-size: 16px;
+    height: 2vh;
+    line-height: 2vh;
+    padding-top: 2px;
+     
+
+}
+
+.name-song{
+    font-size: 20px;
+    font-weight: 400;
+    height: 5vh;
+    line-height: 5vh;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+   margin:  0 10px 0 10px;
+}
+.cd{
+    width: 25vh;
+    height: 25vh;
+     margin: auto;
+    }
+.cd-img{
+        
+        border-radius: 50%;
+    height: 100%;
+    /* background: url(./img/spirits_roads_by_ethemos_df7r3lm.jpg) left /cover; */
+}
+/* btn   */
+
+.btn-action{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 50px;
+    height: 8vh; 
+    line-height: 8vh;
+    margin: 0 8px 0 8px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    color: #888;
+}
+.btn.active{
+    color: #FF8323; 
+}
+.active{
+    color: #FF8323; 
+
+}
+
+i.pause{
+    display: none;
+}
+.pause.active i.play{
+   
+    display: none;
+}
+.pause.active i.pause{
+    position:  relative;
+    display: block;
+    top:50%;
+    transform: translateY(-50%);
+    
+}
+.progress{
+    -webkit-appearance: none;
+    height: 6px;
+    width: 60vw;
+    border-radius: 3px;
+   
+}
+.progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 6px;
+    width: 12px;
+    background-color: #FF8323;
+}
+.audio-volume{
+   
+    height: 6px;
+    width: 40vw;
+    border-radius: 3px;
+   margin-top:16px;
+}
+
+
+
+.second{
+    /* margin-top: 40vh; */
+    width: 100vw;
+    height: 52vh;
+    overflow-y: auto;
+    
+  
+}
+.second::-webkit-scrollbar{
+    display: none;
+}
+.list-song{
+    /* background: #666; */
+    width: 100%;
+    min-height: 60vh;
+
+    /* height: 100%; */
+}
+.song{
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    background: transparent;
+    margin: 0 8px 0 8px;
+
+    
+}
+.song +.song{
+   margin: 8px 8px 0 8px;
+}
+.song-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:0 16px 0 16px;
+
+}
+.song-element{
+    flex:1;
+    
+ 
+    
+    
+     
+}
+.song-name{
+    display:  block;
+    font-size: 22px;
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-weight: 400;
+    
+    
+}
+
+.song-singer{
+    display: block;
+    font-size: 16px;
+    
+}
+p{
+    color: #ccc;
+    opacity: 0.8;
+}
+.song.active p{
+    color: #FF8323; 
+    opacity: 1;
+
+}
+.warn{
+    display: none;
+   
+}
+@media (min-width:1023px) {
+   .warn{
+    display: block;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(36, 33, 33, 0.3);
+    z-index: 99;
+    line-height: 100vh;
+    margin: auto;
+    text-align: center;
+   }
+    
+}
