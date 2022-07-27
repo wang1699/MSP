@@ -1,3 +1,5 @@
+// Vào đây nhìn cái del j
+
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 const listSong = $('.list-song')
